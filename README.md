@@ -90,8 +90,7 @@ rdate -t 60 -s stdtime.gov.hk
 ```
 hwclock -w
 ```
-下面是rdate的命令使用方法介绍  
-
+下面是rdate的命令使用方法介绍    
 功能说明：显示其他主机的日期与时间。  
 
 语　　法：rdate [-ps][主机名称或IP地址…]  
