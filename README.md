@@ -67,7 +67,9 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 lsmod | grep bbr
 ```
+
 - 校时命令
+方法一
 ```
 ntpdate cn.pool.ntp.org
 ```
@@ -89,7 +91,7 @@ rdate -t 60 -s stdtime.gov.hk
 ```
 hwclock -w
 ```
-下面是rdate的命令使用方法介绍
+下面是rdate的命令使用方法介绍  
 功能说明：显示其他主机的日期与时间。
 语　　法：rdate [-ps][主机名称或IP地址…]
 补充说明：执行rdate指令，向其他主机询问系统时间并显示出来。
