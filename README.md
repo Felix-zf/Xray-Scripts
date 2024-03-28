@@ -76,7 +76,7 @@ ntpdate cn.pool.ntp.org
 ```
 00 12 * * * /sbin/ntpdate cn.pool.ntp.org
 ```
-* cn.pool.ntp.org是ntp网络授时组织的中国授时源
+Tips: cn.pool.ntp.org是ntp网络授时组织的中国授时源
 
 - 校时命令  方法二
 
