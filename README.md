@@ -61,7 +61,7 @@ Centos 系统安装 Curl 方法
 ```
 yum update -y && yum install curl -y
 ```
-##Linux中有个ntp包可以自动校准时间，并且非常好用##
+##Linux中有个ntp包可以自动校准时间，并且非常好用
 - Debian系统安装NTP校时包
 ```
 apt-get install ntpdate
@@ -70,7 +70,7 @@ apt-get install ntpdate
 ```
 yum install ntp
 ```
-##安装BBR加速##
+- 安装BBR加速  
 CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
