@@ -80,6 +80,7 @@ lsmod | grep bbr
 ```
 
 - 校时命令
+
 方法一
 ```
 ntpdate cn.pool.ntp.org
@@ -88,8 +89,9 @@ ntpdate cn.pool.ntp.org
 ```
 00 12 * * * /sbin/ntpdate cn.pool.ntp.org
 ```
-Tips: cn.pool.ntp.org是ntp网络授时组织的中国授时源
-方法二
+Tips: cn.pool.ntp.org是ntp网络授时组织的中国授时源  
+
+方法二    
 快速校对linux服务器时间至北京时间  
 服务器采用ntp更新时间，经常牵扯到UTC是否开启的问题，开启了时间就会快8个小时 前段时间朋友给我了下面的命令，一条命令解决之前的所有问题。
 ```
