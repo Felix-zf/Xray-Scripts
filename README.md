@@ -12,9 +12,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-i
 ```
 wget -qO- bench.sh | bash
 ```
-```
-wget -qO- git.io/superbench.sh | bash
-```
 - VPS回程路由
 
 ```
