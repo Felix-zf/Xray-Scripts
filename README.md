@@ -40,7 +40,7 @@ yum install -y curl
 ```
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 ```
-- 查看开启状态
+##查看开启状态##
 ```
 sysctl -p
 ```
@@ -48,7 +48,7 @@ sysctl -p
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
-- 查看开启状态
+##查看开启状态##
 ```
 sysctl -p
 ```
