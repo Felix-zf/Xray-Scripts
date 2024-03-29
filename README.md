@@ -53,6 +53,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-
 sysctl -p
 ```
 - 安装curl
+
 Ubuntu/Debian 系统安装 Curl 方法
 ```
 apt-get update -y && apt-get install curl -y
