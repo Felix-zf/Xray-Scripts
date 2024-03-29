@@ -61,7 +61,7 @@ Centos 系统安装 Curl 方法
 ```
 yum update -y && yum install curl -y
 ```
-##Linux中有个ntp包可以自动校准时间，并且非常好用
+##Linux中有个ntp包可以自动校准时间，并且非常好用##
 - Debian系统安装NTP校时包
 ```
 apt-get install ntpdate
@@ -83,7 +83,7 @@ lsmod | grep bbr
 ```
 ntpdate cn.pool.ntp.org
 ```
-##如果想每隔一定时间自动校时，只需将上面的命令加入至Cron就行了
+##如果想每隔一定时间自动校时，只需将上面的命令加入至Cron就行了##
 ```
 00 12 * * * /sbin/ntpdate cn.pool.ntp.org
 ```
