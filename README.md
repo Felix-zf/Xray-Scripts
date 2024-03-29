@@ -83,7 +83,7 @@ lsmod | grep bbr
 ```
 ntpdate cn.pool.ntp.org
 ```
-- 如果想每隔一定时间自动校时，只需将上面的命令加入至Cron就行了
+##如果想每隔一定时间自动校时，只需将上面的命令加入至Cron就行了
 ```
 00 12 * * * /sbin/ntpdate cn.pool.ntp.org
 ```
