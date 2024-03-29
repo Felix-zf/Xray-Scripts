@@ -8,6 +8,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-i
 
 ## VPS常用脚本合集  
 - VPS性能检测
+
 ```
 wget -qO- bench.sh | bash
 ```
@@ -15,14 +16,17 @@ wget -qO- bench.sh | bash
 wget -qO- git.io/superbench.sh | bash
 ```
 - VPS回程路由
+
 ```
 wget -qO- oldking.net/supertrace.sh | bash
 ```
 - Debian更新系统
+
 ```
 apt update -y
 ```
 - CentOS更新系统
+
 ```
 yum install epel-release -y
 ```
@@ -30,6 +34,7 @@ yum install epel-release -y
 yum update -y
 ```
 - CentOS更新系统
+
 ```
 yum update -y
 ```
@@ -37,6 +42,7 @@ yum update -y
 yum install -y curl
 ```
 - BBR2
+
 ```
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 ```
@@ -45,6 +51,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 sysctl -p
 ```
 - bbrplus加速
+
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
@@ -64,14 +71,17 @@ yum update -y && yum install curl -y
 ```
 ##Linux中有个ntp包可以自动校准时间，并且非常好用##
 - Debian系统安装NTP校时包
+
 ```
 apt-get install ntpdate
 ```
 - CentOS系统安装NTP校时包##
+
 ```
 yum install ntp
 ```
 - 安装BBR加速  
+
 CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
