@@ -77,6 +77,7 @@ apt-get install ntpdate
 ```
 yum install ntp
 ```
+
 - 安装BBR加速  
 
 CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
@@ -117,3 +118,27 @@ hwclock -w
 参　　数：    
 -p 　显示远端主机的日期与时间。    
 -s 　把从远端主机收到的日期和时间，回存到本地主机的系统时间。
+
+# V2rayN路由规则设置  
+- 全局代理
+```
+[
+  {
+    "port": "",
+    "outboundTag": "block",
+    "ip": [],
+    "domain": [
+      "#阻止CrxMouse鼠标手势收集上网数据",
+      "mousegesturesapi.com",
+      "#下一行广告管理平台网址，在ProductivityTab（原iChrome）浏览器插件页面显示",
+      "cf-se.com"
+    ],
+    "protocol": []
+  },
+  {
+    "type": "field",
+    "port": "0-65535",
+    "outboundTag": "proxy"
+  }
+]
+```
