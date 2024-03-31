@@ -120,29 +120,6 @@ hwclock -w
 -s 　把从远端主机收到的日期和时间，回存到本地主机的系统时间。
 
 # V2rayN设置 
-- 路由规则(全局代理)
-```
-[
-  {
-    "port": "",
-    "outboundTag": "block",
-    "ip": [],
-    "domain": [
-      "#阻止CrxMouse鼠标手势收集上网数据",
-      "mousegesturesapi.com",
-      "#下一行广告管理平台网址，在ProductivityTab（原iChrome）浏览器插件页面显示",
-      "cf-se.com"
-    ],
-    "protocol": []
-  },
-  {
-    "type": "field",
-    "port": "0-65535",
-    "outboundTag": "proxy"
-  }
-]
-```
-
 - 路由规则(Whitelist)
 ```
 [
