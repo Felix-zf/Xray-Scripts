@@ -119,8 +119,8 @@ hwclock -w
 -p 　显示远端主机的日期与时间。    
 -s 　把从远端主机收到的日期和时间，回存到本地主机的系统时间。
 
-# V2rayN路由规则设置  
-- 全局代理
+# V2rayN设置  
+- 路由规则(全局代理)
 ```
 [
   {
@@ -142,3 +142,35 @@ hwclock -w
   }
 ]
 ```
+
+- DNS设置
+```
+"dns": {
+  "hosts": {
+    "dns.google": "8.8.8.8",
+    "dns.pub": "119.29.29.29",
+    "dns.alidns.com": "223.5.5.5",
+    "geosite:category-ads-all": "127.0.0.1"
+  },
+  "servers": [
+    {
+      "address": "https://1.1.1.1/dns-query",
+      "domains": ["geosite:geolocation-!cn"],
+      "expectIPs": ["geoip:!cn"]
+    },
+    "8.8.8.8",
+    {
+      "address": "114.114.114.114",
+      "port": 53,
+      "domains": ["geosite:cn", "geosite:category-games@cn"],
+      "expectIPs": ["geoip:cn"],
+      "skipFallback": true
+    },
+    {
+      "address": "localhost",
+      "skipFallback": true
+    }
+  ]
+}
+```
+
