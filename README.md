@@ -52,7 +52,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/install_kernel.sh && chmod +x ./install_kernel.sh && ./install_kernel.sh
 ```
-Script: https://github.com/jinwyp/one_click_script ~~安装步骤：先安装内核，重启输入命令~~  
+Script: https://github.com/jinwyp/one_click_script ~~安装步骤：先安装内核,弹出命令框NO,重启输入命令~~  
 追求稳定：BBR+FQ  |  追求性能：BBR2+FQ_PIE
 
 *查看开启状态*
