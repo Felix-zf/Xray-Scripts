@@ -40,7 +40,7 @@ yum install -y curl
 ```
 - 安装BBR加速  
 
-CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
+- CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
