@@ -38,6 +38,15 @@ yum update -y
 ```
 yum install -y curl
 ```
+- 安装BBR加速  
+
+CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
+```
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
+lsmod | grep bbr
+```
 - BBR2
 
 ```
@@ -56,6 +65,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-
 ```
 sysctl -p
 ```
+
 - 安装curl
 
 Ubuntu/Debian 系统安装 Curl 方法
@@ -76,16 +86,6 @@ apt-get install ntpdate
 
 ```
 yum install ntp
-```
-
-- 安装BBR加速  
-
-CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
-```
-echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-sysctl -p
-lsmod | grep bbr
 ```
 
 - 校时命令
