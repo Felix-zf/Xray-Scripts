@@ -58,6 +58,7 @@ Script: https://github.com/Felix-zf/one_click_script?tab=readme-ov-file
 ```
 sysctl -p
 ```
+
 - 安装curl
 Ubuntu/Debian 系统安装 Curl 方法
 ```
