@@ -48,10 +48,11 @@ lsmod | grep bbr
 ```
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 ```
-3. BBR Plus
+3. BBR One_Click_Script
 ```
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/install_kernel.sh && chmod +x ./install_kernel.sh && ./install_kernel.sh
 ```
+<u>Script: https://github.com/Felix-zf/one_click_script?tab=readme-ov-file</u>
 *查看开启状态*
 ```
 sysctl -p
