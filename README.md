@@ -52,7 +52,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
-##查看开启状态##
+*查看开启状态*
 ```
 sysctl -p
 ```
@@ -87,7 +87,7 @@ ntpdate cn.pool.ntp.org
 Tips: cn.pool.ntp.org是ntp网络授时组织的中国授时源  
 
 方法二    
-快速校对linux服务器时间至北京时间  
+*快速校对linux服务器时间至北京时间* 
 服务器采用ntp更新时间，经常牵扯到UTC是否开启的问题，开启了时间就会快8个小时 前段时间朋友给我了下面的命令，一条命令解决之前的所有问题。
 ```
 rdate -t 60 -s stdtime.gov.hk
