@@ -9,6 +9,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-i
 ---
 
 ## VPS常用脚本合集  
+
 - VPS性能检测
 ```
 wget -qO- bench.sh | bash
@@ -74,6 +75,7 @@ apt-get install ntpdate
 yum install ntp
 ```
 - 校时命令
+
 方法一
 ```
 ntpdate cn.pool.ntp.org
