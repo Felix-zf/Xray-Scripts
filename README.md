@@ -54,7 +54,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_s
 ```
 Script: https://github.com/jinwyp/one_click_script ~~安装步骤：安装内核,重启输入命令~~  
 Tips: Linux内核版本推荐5.5以上，命令弹出框NO.  
-==>追求稳定：BBR+FQ  |  追求性能：BBR2+FQ_PIE
+队列调度算法==>追求稳定：BBR+FQ  |  追求性能：BBR2+FQ_PIE
   
 *查看开启状态*
 ```
