@@ -10,22 +10,18 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-i
 
 ## VPS常用脚本合集  
 - VPS性能检测
-
 ```
 wget -qO- bench.sh | bash
 ```
 - VPS回程路由
-
 ```
 wget -qO- oldking.net/supertrace.sh | bash
 ```
 - Debian更新系统
-
 ```
 apt update -y
 ```
 - CentOS更新系统
-
 ```
 yum install epel-release -y
 ```
@@ -33,7 +29,6 @@ yum install epel-release -y
 yum update -y
 ```
 - CentOS更新系统
-
 ```
 yum update -y
 ```
@@ -41,7 +36,6 @@ yum update -y
 yum install -y curl
 ```
 - 安装BBR加速  
-
 1. CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
@@ -50,16 +44,10 @@ sysctl -p
 lsmod | grep bbr
 ```
 2. BBR2
-
 ```
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 ```
-##查看开启状态##
-```
-sysctl -p
-```
 3. BBR Plus
-
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
@@ -67,9 +55,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-
 ```
 sysctl -p
 ```
-
 - 安装curl
-
 Ubuntu/Debian 系统安装 Curl 方法
 ```
 apt-get update -y && apt-get install curl -y
@@ -80,18 +66,14 @@ yum update -y && yum install curl -y
 ```
 ##Linux中有个ntp包可以自动校准时间，并且非常好用##
 - Debian系统安装NTP校时包
-
 ```
 apt-get install ntpdate
 ```
 - CentOS系统安装NTP校时包##
-
 ```
 yum install ntp
 ```
-
 - 校时命令
-
 方法一
 ```
 ntpdate cn.pool.ntp.org
