@@ -52,7 +52,8 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/jinwyp/one_click_script/master/install_kernel.sh && chmod +x ./install_kernel.sh && ./install_kernel.sh
 ```
-<u>Script: https://github.com/Felix-zf/one_click_script?tab=readme-ov-file</u>
+Script: https://github.com/Felix-zf/one_click_script?tab=readme-ov-file 
+
 *查看开启状态*
 ```
 sysctl -p
