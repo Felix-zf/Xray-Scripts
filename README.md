@@ -40,14 +40,14 @@ yum install -y curl
 ```
 - 安装BBR加速  
 
-- CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
+1. CentOS 8 / Debian ≥ 9 开启自带 BBR 加速 ，复制全部粘贴
 ```
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 lsmod | grep bbr
 ```
-- BBR2
+2. BBR2
 
 ```
 wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
@@ -56,7 +56,7 @@ wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/
 ```
 sysctl -p
 ```
-- BBR Plus
+3. BBR Plus
 
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
