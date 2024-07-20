@@ -1,5 +1,5 @@
 # xray-script
-- 安装curl
+## 安装curl
 Ubuntu/Debian 系统安装 Curl 方法
 ```
 apt-get update -y && apt-get install curl -y
@@ -8,7 +8,7 @@ Centos 系统安装 Curl 方法
 ```
 yum update -y && yum install curl -y
 ```
-Xray 一键安装脚本，基于网络跳跃原版魔改，支持IPv4/IPv6 VPS，支持与宝塔面板共存
+- Xray 一键安装脚本，基于网络跳跃原版魔改，支持IPv4/IPv6 VPS，支持与宝塔面板共存
 
 ```shell
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-install/main/xray.sh && bash xray.sh
