@@ -1,5 +1,5 @@
 # xray-script
-## 安装curl
+- 安装curl
 Ubuntu/Debian 系统安装 Curl 方法
 ```
 apt-get update -y && apt-get install curl -y
@@ -72,8 +72,6 @@ sysctl -p
 ```
 wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
 ```
-
-##Linux中有个ntp包可以自动校准时间，并且非常好用##
 - Debian系统安装NTP校时包
 ```
 apt-get install ntpdate
@@ -82,6 +80,7 @@ apt-get install ntpdate
 ```
 yum install ntp
 ```
+##Linux中有个ntp包可以自动校准时间，并且非常好用##
 - 校时命令
 
 方法一
