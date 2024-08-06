@@ -290,4 +290,21 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 }
 ```
 *以上配置来源，xray github官方示例XTLS/Xray-example（只是做了注释，其他没有修改）
-https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*
+https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*  
+
+启动xray命令
+```
+service xray start
+```
+Debian放行端口
+```
+ufw allow 443
+```
+重启xray命令
+```
+service xray  restart
+```
+查看xray命令
+```
+service xray status
+```
