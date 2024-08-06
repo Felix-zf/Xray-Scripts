@@ -226,11 +226,66 @@ hwclock -w
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-安装xray,命令来源（xray github页面）：https://github.com/XTLS/Xray-install
+安装xray
 ```
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
 ```
 卸载xray
 ```
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
+```
+**命令来源（xray github页面）：https://github.com/XTLS/Xray-install**  
+
+进入/usr/local/etc/xray,打开xray.conf，清空所有内容，将以下文本输入，//后面为需要手动修改的，//和后面的文字可以保留在xray.conf里面，不影响使用。
+```
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [
+        {
+            "port": 443, 
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "", // run `xray uuid` to generate
+                        "flow": "xtls-rprx-vision"
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "realitySettings": {
+                    "dest": "", // A website that support TLS1.3 and h2. You can also use `1.1.1.1:443` as dest
+                    "serverNames": [
+                        ""    // A server name in the cert of dest site. If you use `1.1.1.1:443` as dest, then you can leave `serverNames` empty, it is a possible ways to bypass Iran's internet speed restrictions.
+                    ],
+                    "privateKey": "", // run `xray x25519` to generate. Public and private keys need to be corresponding.
+                    "shortIds": [// Required, list of shortIds available to clients, can be used to distinguish different clients
+                        "", // If this item exists, client shortId can be empty
+                        "0123456789abcdef" // 0 to f, length is a multiple of 2, maximum length is 16
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "routeOnly": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        }
+    ]
+}
 ```
