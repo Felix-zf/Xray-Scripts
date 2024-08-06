@@ -303,7 +303,7 @@ ufw allow 443
 ```
 重启xray命令
 ```
-service xray  restart
+service xray restart
 ```
 查看xray状态
 ```
