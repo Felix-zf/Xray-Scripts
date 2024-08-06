@@ -220,7 +220,9 @@ hwclock -w
   ]
 }
 ```
+
 ------
+
 # Xray-reality  
 更新VPS命令
 ```
@@ -304,7 +306,7 @@ ufw allow 443
 ```
 service xray  restart
 ```
-查看xray命令
+查看xray状态
 ```
 service xray status
 ```
