@@ -1,6 +1,6 @@
 # xray-script
 
-**Core-Xray：https://github.com/XTLS/Xray-core**
+**Project Core-Xray：https://github.com/XTLS/Xray-core**
 
 - 安装curl
 
