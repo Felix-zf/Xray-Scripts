@@ -1,4 +1,7 @@
 # xray-script
+
+**Core-Xray：https://github.com/XTLS/Xray-core**
+
 - 安装curl
 
 Centos 系统安装 Curl 方法
