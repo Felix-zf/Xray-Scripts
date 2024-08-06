@@ -221,4 +221,16 @@ hwclock -w
 }
 ```
 ------
-
+# Xray-reality  
+更新VPS命令
+```
+sudo apt update && sudo apt upgrade -y
+```
+安装xray,命令来源（xray github页面）：https://github.com/XTLS/Xray-install
+```
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
+```
+卸载xray
+```
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
+```
