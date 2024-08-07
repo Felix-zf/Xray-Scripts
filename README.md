@@ -321,4 +321,4 @@ systemctl status xray
 
 ## 鸣谢
 - Misaka-blog的xray一键脚本：https://github.com/Misaka-blog/xray-script
-- Youtube博主JollyRoger的视频教学：https://www.youtube.com/watch?v=KJb8qSF0wCI&list=PLCRbWS2_Nhnt4OrNjA1UDDkCa6Qwq_dvj
+- Youtube博主JollyRoger的博文教学：https://jollyroger.top/sites/24.html
