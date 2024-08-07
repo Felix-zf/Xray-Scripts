@@ -298,6 +298,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*  
 
 ## 客户端配置
+V2rayNG可以手动输入配置信息，注意与服务器端配置信息匹配。
 ```
 {
     "log": {
@@ -356,7 +357,7 @@ https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/co
     ]
 }
 ```
-*V2rayNG可以手动输入配置信息，配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc*
+*配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc*
 
 ## 回落域名说明
 1.选择回落域名的最低标准为：国外的网站，支持 TLS v1.3、H2 协议，并使用 x25519 证书  
