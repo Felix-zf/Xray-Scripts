@@ -3,7 +3,7 @@
 - Project Xray：https://github.com/XTLS/Xray-core
 - Offical Blog: https://xtls.github.io/
 
-- 安装curl
+## vps更新安装
 
 Centos 系统安装 Curl 方法
 ```
@@ -116,7 +116,7 @@ hwclock -w
 
 ---
 
-# V2rayN设置 
+## V2rayN设置 
 - 路由规则(Whitelist)
 ```
 [
