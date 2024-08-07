@@ -321,4 +321,5 @@ systemctl status xray
 
 ## 鸣谢
 - Misaka-blog的xray一键脚本：https://github.com/Misaka-blog/xray-script
+- Loyalsoldier的路由规则项目：https://github.com/Loyalsoldier/v2ray-rules-dat
 - Youtube博主JollyRoger的博文教学：https://jollyroger.top/sites/24.html
