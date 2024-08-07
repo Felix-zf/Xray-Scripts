@@ -1,4 +1,4 @@
-# xray-script
+# xray多合一
 
 **Project Core-Xray：https://github.com/XTLS/Xray-core**
 
