@@ -282,7 +282,7 @@ getData() {
             CERT_FILE="/usr/local/etc/xray/${DOMAIN}.pem"
             KEY_FILE="/usr/local/etc/xray/${DOMAIN}.key"
         else
-            resolve=`curl -sm8 ip-api.com/line/"${domain}"?fields=query`
+            resolve=`curl -sm8 ip-api.com/line/"${domain}"?fields=query`    #改动 curl -sL ipget.net/?ip=${DOMAIN}
             res=`echo -n ${resolve} | grep ${IP}`
             if [[ -z "${res}" ]]; then
                 colorEcho ${BLUE}  "${DOMAIN} 解析结果：${resolve}"
@@ -429,7 +429,7 @@ getData() {
                     index=`shuf -i0-${len} -n1`
                     PROXY_URL=${SITES[$index]}
                     host=`echo ${PROXY_URL} | cut -d/ -f3`
-                    ip=`curl -sm8 ip-api.com/line/"${host}"?fields=query`
+                    ip=`curl -sm8 ip-api.com/line/"${host}"?fields=query`     #改动 curl -sL ipget.net/?ip=${host}
                     res=`echo -n ${ip} | grep ${host}`
                     if [[ "${res}" = "" ]]; then
                         echo "$ip $host" >> /etc/hosts
