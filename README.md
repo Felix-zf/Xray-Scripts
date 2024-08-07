@@ -298,7 +298,8 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*  
 
 ## 客户端配置
-V2rayNG可以手动输入配置信息，注意与服务器端配置信息匹配。
+V2rayNG可以手动输入配置信息，注意与服务器端配置信息匹配。  
+
 *配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc*
 
 ## xray相关命令
