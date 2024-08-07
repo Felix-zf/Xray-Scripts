@@ -225,21 +225,22 @@ hwclock -w
 ```
 
 ------
-# Xray-reality  
-更新VPS命令
+# Xray-reality
+- 更新VPS命令
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-安装xray
+- 安装xray
 ```
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
 ```
-卸载xray
+- 卸载xray
 ```
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ remove
 ```
 *命令来源（xray github页面）：https://github.com/XTLS/Xray-install*  
 
+## 服务器端配置
 进入/usr/local/etc/xray,打开xray.conf，清空所有内容，将以下文本输入，//后面为需要手动修改的，//和后面的文字可以保留在xray.conf里面，不影响使用。
 ```
 {
@@ -296,6 +297,68 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 *以上配置来源，xray github官方示例XTLS/Xray-example（只是做了注释，其他没有修改）
 https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*  
 
+## 客户端配置
+```
+{
+    "log": {
+        "loglevel": "debug"
+    },
+    "inbounds": [
+        {
+            "listen": "127.0.0.1", 
+            "port": 10808, 
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls",
+                    "quic"
+                ],
+                "routeOnly": true
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "", 
+                        "port": 443, 
+                        "users": [
+                            {
+                                "id": "", // Needs to match server side
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "reality",
+                "realitySettings": {
+                    "fingerprint": "chrome", 
+                    "serverName": "", // A website that support TLS1.3 and h2. If your dest is `1.1.1.1:443`, then leave it empty
+                    "publicKey": "", // run `xray x25519` to generate. Public and private keys need to be corresponding.
+                    "spiderX": "", // If your dest is `1.1.1.1:443`, then you can fill it with `/dns-query/` or just leave it empty
+                    "shortId": "" // Required
+                }
+            },
+            "tag": "proxy"
+        }
+    ]
+}
+```
+*以上配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc，使用V2rayNG可以手动输入配置信息*
+
+## xray常用命令
 启动xray命令
 ```
 systemctl start xray
