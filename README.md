@@ -358,7 +358,7 @@ https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/co
 ```
 *V2rayNG可以手动输入配置信息，配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc*
 
-## xray常用命令
+## xray相关命令
 启动xray命令
 ```
 systemctl start xray
