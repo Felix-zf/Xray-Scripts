@@ -322,5 +322,6 @@ systemctl status xray
 ## 鸣谢
 - Misaka-blog的xray一键脚本：https://github.com/Misaka-blog/xray-script
 - Loyalsoldier的路由规则项目：https://github.com/Loyalsoldier/v2ray-rules-dat
+- V2Ray中文网的校时命令：https://www.linuxv2ray.com/server/v2ray-synchronize-time-by-ntp/
 - Youtube博主JollyRoger的博文教学：https://jollyroger.top/sites/24.html
 - ekayxu的技术问答：https://github.com/ekayxu
