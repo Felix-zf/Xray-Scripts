@@ -1,6 +1,7 @@
 # xray多合一
 
-**Project Core-Xray：https://github.com/XTLS/Xray-core**
+- Project Xray：https://github.com/XTLS/Xray-core
+- Offical Blog: https://xtls.github.io/
 
 - 安装curl
 
