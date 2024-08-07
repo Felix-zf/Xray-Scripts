@@ -298,7 +298,7 @@ https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/co
 
 启动xray命令
 ```
-service xray start
+systemctl start xray
 ```
 Debian放行端口
 ```
@@ -306,9 +306,9 @@ ufw allow 443
 ```
 重启xray命令
 ```
-service xray restart
+systemctl restart xray
 ```
 查看xray状态
 ```
-service xray status
+systemctl status xray
 ```
