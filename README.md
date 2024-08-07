@@ -241,7 +241,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 *命令来源（xray github页面）：https://github.com/XTLS/Xray-install*  
 
 ## 服务器端配置
-进入/usr/local/etc/xray,打开xray.conf，清空所有内容，将以下文本输入，//后面为需要手动修改的，//和后面的文字可以保留在xray.conf里面，不影响使用。
+进入/etc/systemd/system/xray.service,打开xray.conf，清空所有内容，将以下文本输入，//后面为需要手动修改的，//和后面的文字可以保留在xray.conf里面，不影响使用。
 ```
 {
     "log": {
