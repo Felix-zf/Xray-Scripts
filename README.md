@@ -1,7 +1,7 @@
 # xray多合一
 
 - Project Xray：https://github.com/XTLS/Xray-core
-- Offical Blog: https://xtls.github.io/
+- Offical Blog: https://xtls.github.io
 
 ## vps更新安装
 
