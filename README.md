@@ -1,6 +1,6 @@
 # 基于xray内核多合一脚本
 
-- Project Core-Xray：https://github.com/XTLS/Xray-core
+- Project Core Xray：https://github.com/XTLS/Xray-core
 - Offical Blog: https://xtls.github.io
 
 ## vps更新安装
