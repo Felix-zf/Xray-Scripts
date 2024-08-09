@@ -20,7 +20,7 @@ apt-get update -y && apt-get install curl -y
 wget -N --no-check-certificate https://raw.githubusercontent.com/Felix-zf/Xray-Scripts/main/xray.sh && bash xray.sh
 ```
 
-## VPS常用脚本合集  
+### VPS常用脚本合集  
 
 - VPS性能检测
 ```
@@ -117,7 +117,7 @@ hwclock -w
 
 ---
 
-## V2rayN设置 
+### V2rayN设置 
 - 路由规则(Whitelist)
 ```
 [
@@ -227,7 +227,7 @@ hwclock -w
 ```
 
 ------
-# Xray-reality
+## Xray-reality
 
 - 更新VPS命令
 ```
@@ -243,7 +243,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 ```
 *命令来源（xray github页面）：https://github.com/XTLS/Xray-install*  
 
-## 服务器端配置
+### 服务器端配置
 进入/etc/systemd/system/xray.service,打开xray.conf，清空所有内容，将以下文本输入，//后面为需要手动修改的，//和后面的文字可以保留在xray.conf里面，不影响使用。
 ```
 {
@@ -300,10 +300,10 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 *以上配置来源，xray github官方示例XTLS/Xray-example（只是做了注释，其他没有修改）
 https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_server.jsonc*  
 
-## 客户端配置
+### 客户端配置
 *V2rayN可以手动输入配置信息，注意与服务器端配置信息匹配。配置来源：https://github.com/XTLS/Xray-examples/blob/main/VLESS-TCP-XTLS-Vision-REALITY/config_client.jsonc*
   
-## xray相关命令
+### xray相关命令
 启动xray命令
 ```
 systemctl start xray
