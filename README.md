@@ -1,9 +1,10 @@
-# 基于xray内核多合一脚本
+# 基于xray内核的脚本搭建教程
 
 - Project Core Xray：https://github.com/XTLS/Xray-core
 - Offical Blog: https://xtls.github.io
 
-## vps更新安装
+## Xray多合一脚本
+- vps更新安装
 
 Centos 系统安装 Curl 方法
 ```
