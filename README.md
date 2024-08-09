@@ -227,7 +227,7 @@ hwclock -w
 ```
 
 ------
-## Xray-Reality手动配置
+## Xray-reality手动配置
 
 - 更新VPS命令
 ```
